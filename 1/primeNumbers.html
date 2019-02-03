@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h1>2.2</h1>
+
+        <script type="text/javascript">
+
+          // Check prime number:
+
+          var x = parseInt(prompt("Enter a Value", "0"), 10);
+
+          const isPrime = (num) => {
+            for(let i = 2; i < Math.sqrt(num); i++)
+              if(num % i === 0) return false;
+            return num !== 1 && num !== 0;
+          }
+          let result = isPrime(x);
+          window.alert(result);
+          console.log(result);
+
+          // Show prime numbers:
+
+          const returnPrime = (num) => {
+            for(let i = 2; i < num; i++)
+              if(num % i === 0) {
+                return false;
+                return num !== 1 && num !== 0;
+              }else {
+                console.log(num);
+              }
+          }
+          var y = parseInt(prompt("Enter a number line to show all prime number in the console", "0"), 10);
+
+          for (var i = 0; i < y; i++) {
+            returnPrime(i);
+          }
+        </script>
+
+    </body>
+</html>
