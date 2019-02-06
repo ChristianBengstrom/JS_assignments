@@ -46,7 +46,7 @@
       >
       <br><br>
 
-      <button type="submit" name="go">Go</button>
+      <input type="submit" value="Submit">
     </form>
 
   </body>
