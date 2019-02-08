@@ -34,8 +34,6 @@ let initialize = () => {
     negate() {
       let newN = this.numerator * -1;
       this.setNumerator(newN);
-      let newD = this.denominator * -1;
-      this.setDenominator(newD);
     },
     invert() {
       let oldN = this.numerator;
@@ -142,10 +140,10 @@ let initialize = () => {
         resN = ration1.numerator * ration2.denominator + ration1.denominator * ration2.numerator;
         resD = ration1.denominator * ration2.denominator;
       }
-      let rationResult = Object.create(Rational);
-      rationResult.init(resN,resD);
-      rationResult.reduce();
-      output.innerHTML = rationResult.toString();
+      ration1.setNumerator(resN);
+      ration1.setDenominator(resD);
+      ration1.reduce();
+      output.innerHTML = ration1.toString();
     };
 
     let sub = () => {
@@ -162,6 +160,10 @@ let initialize = () => {
       rationResult.init(resN,resD);
       rationResult.reduce();
       output.innerHTML = rationResult.toString();
+      ration1.setNumerator(resN);
+      ration1.setDenominator(resD);
+      // ration1.reduce();
+      output.innerHTML = ration1.toString();
     };
 
     let mul = () => {
@@ -170,10 +172,14 @@ let initialize = () => {
       resN = ration1.numerator * ration2.numerator;
       resD = ration1.denominator * ration2.denominator;
 
-      let rationResult = Object.create(Rational);
-      rationResult.init(resN,resD);
-      rationResult.reduce();
-      output.innerHTML = rationResult.toString();
+      // let rationResult = Object.create(Rational);
+      // rationResult.init(resN,resD);
+      // rationResult.reduce();
+      // output.innerHTML = rationResult.toString();
+      ration1.setNumerator(resN);
+      ration1.setDenominator(resD);
+      ration1.reduce();
+      output.innerHTML = ration1.toString();
     };
 
     let div = () => {
@@ -182,10 +188,14 @@ let initialize = () => {
       resN = ration1.numerator * ration2.denominator;
       resD = ration1.denominator * ration2.numerator;
 
-      let rationResult = Object.create(Rational);
-      rationResult.init(resN,resD);
-      rationResult.reduce();
-      output.innerHTML = rationResult.toString();
+      // let rationResult = Object.create(Rational);
+      // rationResult.init(resN,resD);
+      // rationResult.reduce();
+      // output.innerHTML = rationResult.toString();
+      ration1.setNumerator(resN);
+      ration1.setDenominator(resD);
+      ration1.reduce();
+      output.innerHTML = ration1.toString();
     };
   });
 
