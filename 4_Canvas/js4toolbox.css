@@ -1,0 +1,9 @@
+.container {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.container canvas {
+  outline: 1px solid magenta;
+}

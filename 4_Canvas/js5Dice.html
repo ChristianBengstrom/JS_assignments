@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 5.0</title>
+    <link rel="stylesheet" href="./js5Dice.css">
+    <script src="../0KeyboardSafers/nQuery.js"></script>
+    <script src="../0KeyboardSafers/canvas/CanvasTemplate.js"></script>
+
+    <!-- <script src="./js4toolbox_ShapeTriangle.js"></script> -->
+    <script src="./js5Dice.js"></script>
+    <script src="./js5ShapeDice.js"></script>
+    <script src="./js5DiceScoreBoard.js"></script>
+  </head>
+  <body>
+    <h1>Assignment 5.0</h1>
+    <p>Before canvas, bla, bla, lorem ipsum ...</p>
+    <br>
+    <canvas id="myCanvas" width="465" height="100"></canvas>
+    <div class="roll" id="roll">
+      <a href="#">Roll Dice!</a>
+    </div>
+
+    <div class="lower">
+
+      <div class="roll restart" id="restart">
+        <a href="#">New Game</a>
+      </div>
+
+      <div class="scoreBoard">
+        <table id="my-table">
+          <tr>
+            <th>Points</th>
+          </tr>
+          <tr>
+            <td class="tmp">1'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp">2'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp">3'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp">4'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp">5'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp">6'ere</td>
+          </tr>
+          <tr>
+            <td class="tmp"><em>SUM</em></td>
+          </tr>
+          <tr>
+            <td class="tmp">Bonus</td>
+          </tr>
+          <tr>
+            <td class="tmp">1 par</td>
+          </tr>
+          <tr>
+            <td class="tmp">2 par</td>
+          </tr>
+          <tr>
+            <td class="tmp">3 ens</td>
+          </tr>
+          <tr>
+            <td class="tmp">4 ens</td>
+          </tr>
+          <tr>
+            <td class="tmp">Lille straight</td>
+          </tr>
+          <tr>
+            <td class="tmp">Stor straight</td>
+          </tr>
+          <tr>
+            <td class="tmp">Fuld hus</td>
+          </tr>
+          <tr>
+            <td class="tmp">Chance</td>
+          </tr>
+          <tr>
+            <td class="tmp">YATSY</td>
+          </tr>
+          <tr>
+            <td class="tmp"><em>SUM</em></td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+<br>
+<h1>Yatzy spilleregler</h1>
+<div class="entry-content clearfix single-post-content">
+<p><span style="line-height: 1.5;">Yatzy spillet blev opfundet i 1954 af et ægtepar som kaldte spillet &#8220;The Yacht Game&#8221;. De spillede dette spil på deres Yacht med et vennepar. Yatzy spillet har udspring i andre terningspil som eksempelvis &#8220;Generala&#8221; og &#8220;Cheerio&#8221;.</span></p>
+<p><a style="line-height: 1.5;" title="Online Yatzy" href="https://terningspil.dk/online-yatzy/">Spil vores gratis Online Yatzy spil her</a> &#8211; Virker uanset om du spiller fra computer eller mobiltelefon.</p>
+<p><strong>Det skal du bruge for at spille:</strong></p>
+<ul>
+<li>Materialer: 5 terninger og en yatzy blok.</li>
+</ul>
+<h2>Sådan spiller du Yatzy</h2>
+<p>Den spiller som opnår flest points vinder.</p>
+<p>Når en spiller står for tur, får denne højst 3 kast med et valgfrit antal terninger.</p>
+<p>Spilleren må selv bestemme hvilke og hvor mange terninger der skal kastes om for at forsøge at matche en ikke udfyldt kombination på yatzy-tavlen.</p>
+<p><strong>Eksempel:</strong> Første kast af de 3 giver 1-4-4-6-3. Spilleren lader 4&#8217;erne ligge og kaster de øvrige terninger om, som nu giver 2-5-4. 4&#8217;eren bliver liggende og spilleren kaster de øvrige terninger om som giver 1-1. Resultatet bliver &#8220;hus&#8221; (4-4-4-1-1) pointtal 14, som noteres i rubrikken &#8220;hus&#8221;. Hvis det sidste kast havde været 3-1, så var resultatet blevet (4-4-4-3-1), pointtallet 12, som man kan notere i rubrikken 4-ere.</p>
+<p>Kan et pointtal ikke placeres, det vil sige at alle blokkens rubrikker hvor kastet kunne placeres er optaget, skrives 0 point i en af de øvrige rubrikker (spilleren kan selv vælge i hvilken rubrik, der skal skrives nul) eller også noteres det samlet pointtal i &#8220;chancen&#8221;.</p>
+<p>Hver rubrik må kun anvendes én gang. Ved et samlet pointantal på 63 eller mere på øverste sektion af yatzy-tavlen, tildeles en bonus på 50 point.</p>
+<h3>Kombinations mulighederne:</h3>
+<ul>
+<li><strong>ENERE:</strong> Det gælder om at slå et så stort antal ettere som muligt. Hver ener giver et point.</li>
+<li><strong>TOERE-SEKSERE:</strong> Samme regel som for enerne. Hver ens terning giver point efter antal prikker.</li>
+<li><strong>BONUS:</strong> En spiller som får en totalsum på 63 point eller over på øverste sektion af yatzy-tavlen får en bonus på 50 point ekstra.</li>
+<li><strong>ET PAR:</strong> Det gælder om at slå et så højt par som muligt, antal prikker = point.</li>
+<li><strong>TO PAR:</strong> Slå to forskellige par begge så høje som muligt, antal prikker = point.</li>
+<li><strong>3 ENS:</strong> Slå tre ens terninger, så høje som muligt, prikker = point.</li>
+<li><strong>4 ENS:</strong> Slå fire ens terninger, så høje som muligt, prikker = point.</li>
+<li><strong>LILLE STRAIGHT:</strong> Slå fem terninger i rækkefølge fra 1 til 5, giver 15 point.</li>
+<li><strong>STOR STRAIGHT:</strong> Slå fem terninger i rækkefølge fra 2 til 6, giver 20 point.</li>
+<li><strong>FULDT HUS:</strong> Et par og tre ens, parret og de tre ens skal være forskellige, prikker = point.</li>
+<li><strong>CHANCEN:</strong> Hvis et terningekast ikke kan anvendes til nogle af de ledige kombinationer, kan summen af prikkerne påføres i feltet “Chancen”.</li>
+<li><strong>YATZY:</strong> Et kast, så alle terninger viser ens. Dette kast giver terningernes værdi + 50 point.</li>
+</ul>
+  </body>
+</html>

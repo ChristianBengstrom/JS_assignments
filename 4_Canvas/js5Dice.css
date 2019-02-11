@@ -1,0 +1,77 @@
+canvas {
+  /* outline: 1px solid black; */
+  border-radius: 10px;
+  float: left;
+}
+.roll {
+  background-color: darkgreen;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  float: left;
+  margin-left: 15px;
+  cursor: progress;
+}
+a {
+  display: block;
+  color: white;
+  padding: 0 13px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.lower {
+  position: relative;
+  top: 15px;
+  width: 580px;
+  clear:both;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.restart {
+  height: 100px;
+  width: 100px;
+  font-size: 0.9em;
+  background-color: darkred;
+}
+.scoreBoard {
+  clear:both;
+  /* width: 465px; */
+  float: left;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 0;
+}
+
+th {
+  border-bottom: 2px solid black;
+  border-top: 0;
+}
+tr:nth-last-child(1), tr:nth-last-child(12) {
+  border-top: 2px black;
+  border-bottom: 2px dotted black;
+  border-left: 0;
+  border-right: 0;
+
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+tr td em {
+  color: darkgreen;
+  font-weight: bold;
+}
