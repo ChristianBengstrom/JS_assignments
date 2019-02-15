@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8"/>
+        <title>da</title>
+        <link rel='stylesheet' type='text/css' media='screen, projection, print'
+            href='./golStyle.css'/>
+        <script type='text/javascript'>
+           var se = document.createElement('script');
+           se.src='./gol.js';
+           se.defer=true;
+           se.type='text/javascript';
+           se.charset='utf-8';
+           document.getElementsByTagName('head')[0].appendChild(se);
+        </script>
+	</head>
+	<body onload="setup();startStop=setInterval(playGameOfLife,INTERVAL);">
+		<form id="setParmForm">
+			<div style="position:absolute;bottom:0;right:0;z-index:1000;">
+				<input type="button" value="Start New" onclick="setup();startStop=setInterval(playGameOfLife,INTERVAL);" />
+				<input type="button" value="Continue" onclick="startStop=setInterval(playGameOfLife,INTERVAL);" />
+				<input type="button" value="Suspend" onclick="clearInterval(startStop);" />
+			</div>
+        </form>
+
+	</body>
+</html>

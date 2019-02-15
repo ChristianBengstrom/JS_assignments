@@ -1,0 +1,35 @@
+<!doctype html>
+<html language="en">
+    <!-- Configurator html driver -->
+    <head>
+        <meta charset="utf-8"/>
+        <title>Canvas 91</title>
+        <link rel='stylesheet' href='config.css'/>
+        <script src="../../0KeyboardSafers/nQuery.js"></script>
+        <script src="nmlCanvas.js"></script>
+        <script src="nmlShape.js"></script>
+        <script src="config80.js"></script>
+    </head>
+    <body>
+        <h1>Configurator Experimentarium</h1>
+        <p>
+            Take shapes from shape library and place them in room.
+            Draw room with user entered mesurements.
+        </p>
+        <div id='lib'>
+            <canvas id='toolbox' width='250' height='400'></canvas>
+        </div>
+        <div id='work'></div>
+        <div id='spacer'></div>
+        <div>
+            <form id='inputpanel' method='post' action='#'>
+                <input type='number' name='wid' placeholder='width in cms'/>
+                <input type='number' name='hei' placeholder='height in cms'/>
+                <br/>
+                <input type='button' name='bt1' value='Create/Recreate Room'/>
+                <input type='button' name='btf' value='Calculate if finished'/>
+            </form>
+        </div>
+        <div id='calculation'></div>
+    </body>
+</html>

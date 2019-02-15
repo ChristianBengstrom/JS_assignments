@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Canvas Test Animation</title>
+        <script src="../0KeyboardSafers/nQuery.js"></script>
+        <script src="../0KeyboardSafers/canvas/CanvasTemplate.js"></script>
+        <script src='nmlUmo.js'></script>
+        <script>
+            let c;
+            let canvas;
+            let suspender;
+            let suspended = false;
+
+            let redraw = function () {
+                canvas.clear();     // clear canvas
+                canvas.prep();      // prep canvas with background color
+                c.move();           // move thing
+                c.draw();           // draw thing
+                d.move();           // move thing
+                d.draw();           // draw thing
+            }
+
+            let repeater = function () {
+                suspender = setInterval(redraw, 10);
+            }
+
+            let suspend = function() {
+                if (suspended) {
+                    repeater();
+                    suspended = false;
+                } else {
+                    clearInterval(suspender);
+                    suspended = true;
+                }
+            }
+
+            let initialize = function () {
+                $('canvas').addEventListener('click', suspend);
+                canvas = Object.create(Canvas);
+                canvas.init('canvas', '#ffff88');
+                c = Object.create(Umo);
+                c.init(canvas, '#000088');
+                d = Object.create(Umo);
+                d.init(canvas, 'red');
+                repeater();
+            }
+
+            let nml = window.addEventListener('load', initialize, false);
+        </script>
+    </head>
+    <body>
+        <section>
+            <canvas id='canvas' width='400' height='300'>
+                If you see this text, your browser is very old.
+            </canvas>
+            <p>click canvas to start stop animation</p>
+        </section>
+    </body>
+</html>

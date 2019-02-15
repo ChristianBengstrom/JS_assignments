@@ -1,0 +1,54 @@
+#boardiv {
+		border: 0px solid green;
+		margin: auto;
+		padding-top: 0em;
+		text-align: center;
+		width: 70%;
+}
+#boardid {
+		border: 1px solid gray;
+		border-collapse: collapse;
+		font-size: 6px;
+}
+#boardid td {
+		border: 0px solid green;
+		padding: 0;
+		height: 1em;
+		width: 1.6em;
+}
+
+.live {
+		background-color: white;
+		color: red;
+}
+.dead {
+		background-color: black;
+		color: white;
+}
+
+
+
+
+html {
+	background-color: black;
+	color: white;
+	margin: 0;
+}
+h1, nav {
+	margin: 0 1em;
+}
+nav {
+  text-align: right;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline;
+  font-size: 1.2em;
+  margin-left: 1.5em;
+}
+nav ul li a {
+  color: silver;
+  text-decoration: none;
+}

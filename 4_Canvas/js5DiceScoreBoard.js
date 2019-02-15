@@ -8,12 +8,12 @@ let manageScore = function () {
 
   let rBtn = $('restart');
   rBtn.addEventListener('click', function(){
-      // let nop = parseInt(prompt('angiv antal spillere')); // promt nop = number of players
-      let nop = 1;
+      let nop = parseInt(prompt('angiv antal spillere')); // promt nop = number of players
+      // let nop = 1;
 
       for (var i = 1; i < nop+1; i++) {
-        // players[i] = prompt('angiv '+i+'. medspillers navn'); //promt names
-        players[i] = 'P'+i
+        players[i] = prompt('angiv '+i+'. medspillers navn'); //promt names
+        // players[i] = 'P'+i
         let cc = i;                   // column counter
         appendColumn(players[i], cc);
         addEL();                      // addEventListeners
@@ -111,7 +111,7 @@ let manageScore = function () {
             cell.innerHTML = sum(1,6);
             break;
           case 8:
-            cell.innerHTML = sum(1,6)>63 ? 50 : 0;
+            cell.innerHTML = sum(1,6)>= 63 ? 50 : 0;
             break;
           case 9:
             // cell.innerHTML = !Math.max(counts) ? Math.max(counts) : 0;
